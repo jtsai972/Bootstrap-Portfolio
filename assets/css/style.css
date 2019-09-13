@@ -1,3 +1,76 @@
-body {
-    
+* {
+    transition: ease all .5s;
 }
+
+body {
+    background: #ddd url("./assets/images/strange_bullseyes.png") repeat;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    overflow: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    color: #4aaaa5;
+}
+
+/* navigation */
+header nav.navbar {
+    padding: 0;
+}
+
+    .navbar-brand {
+        background: #4aaaa5;
+        color: white;
+        font-weight: bold;
+        font-size: 2rem;
+        padding: 1.25rem 2rem;
+        margin: 0;
+    }
+
+    header .nav-link {
+        color: #777;
+    }
+
+/* Content */
+article {
+    margin: 2em auto;
+    padding: 1em 2em;
+    margin-bottom: 8em;
+}
+    h2 {
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 1em;
+        padding-bottom: 1rem;
+    }
+        .avatar {
+            width: 25%;
+        }
+
+        button.btn-primary {
+            background: #4aaaa5;
+            border: none;
+            border-radius: 0;
+        }
+
+/* Footer */
+footer {
+    border-top: #4aaaa5 solid 0.25em;
+}
+
+
+/* Custom Media Query */
+@media screen and (max-width: 768px) {
+    .navbar-brand, .navbar-nav {
+        text-align: center;
+        width: 100%;
+    }
+    .avatar {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .avatar {
+        width: 100%;
+    }
+} 
