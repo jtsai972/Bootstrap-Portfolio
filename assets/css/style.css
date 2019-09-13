@@ -51,6 +51,14 @@ article {
             border: none;
             border-radius: 0;
         }
+    
+        .figure-caption {
+            background: rgba(0,0,0,0.5);
+            color: white;
+            padding: 0.5em 1em;
+            position: relative;
+                bottom: 4em;
+        }
 
 /* Footer */
 footer {
